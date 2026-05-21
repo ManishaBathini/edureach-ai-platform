@@ -111,7 +111,7 @@ edureach-platform/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/ManishaBathini/Edureach-Agentic-College-ChatBot.git
+git clone https://github.com/ManishaBathini/edureach-ai-platform.git
 ```
 
 ### 2️⃣ Install Frontend Dependencies

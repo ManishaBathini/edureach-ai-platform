@@ -1,23 +1,22 @@
 # EduReach AI Platform
 
-AI-powered college counseling platform built using React, Node.js, MongoDB Atlas Vector Search, and Gemini API with Retrieval-Augmented Generation (RAG) to provide contextual and intelligent student assistance.
+AI-powered college guidance platform built using React, Node.js, MongoDB Atlas Vector Search, Gemini API, and Retrieval-Augmented Generation (RAG) to provide contextual and intelligent student assistance.
+
+---
+
+## 🌐 Live Demo
+
+Frontend: https://edureach-ai-platform-4hbt.vercel.app/
+
+Backend API: https://edureach-backend-34aq.onrender.com
 
 ---
 
 ## 🚀 Overview
 
-EduReach is a full-stack AI-powered educational platform designed to simplify how students interact with college information systems.
+EduReach is an AI-powered college guidance platform that helps students get contextual information about admissions, courses, placements, scholarships, and campus details through an intelligent RAG-based chatbot.
 
-Traditional college websites are often overloaded with static information, making it difficult for students to quickly find answers about:
-
-- Courses
-- Admissions
-- Fee structures
-- Scholarships
-- Placements
-- Campus details
-
-EduReach solves this problem using an intelligent RAG-based AI chatbot that provides contextual, accurate, and conversational responses in real time.
+The platform combines semantic search, vector embeddings, and generative AI to provide accurate and context-aware responses instead of simple keyword matching.
 
 ---
 
@@ -25,14 +24,15 @@ EduReach solves this problem using an intelligent RAG-based AI chatbot that prov
 
 ### 🤖 AI RAG Chatbot
 - Context-aware AI assistant
-- Retrieves information from a college knowledge base
-- Generates intelligent responses using Gemini API
+- Retrieval-Augmented Generation (RAG)
+- Semantic search with vector embeddings
+- Intelligent responses using Gemini API
 - Handles admission, placements, fees, scholarships, and course-related queries
 
 ### 🔍 MongoDB Atlas Vector Search
 - Stores embeddings for semantic search
-- Enables intelligent retrieval of relevant college data
-- Improves chatbot accuracy with contextual understanding
+- Retrieves relevant knowledge chunks intelligently
+- Improves AI response quality and context understanding
 
 ### 🔐 JWT Authentication
 - Secure user signup/login system
@@ -40,14 +40,12 @@ EduReach solves this problem using an intelligent RAG-based AI chatbot that prov
 
 ### 📞 AI Callback Request System
 - Students can request counseling support
-- User-friendly callback request workflow
-- Integrated AI-assisted counselor interaction flow
+- AI-assisted counselor interaction workflow
 
 ### 🎨 Modern Responsive UI
 - Fully responsive design
-- Clean educational landing page
 - Interactive chatbot interface
-- Smooth user experience
+- Smooth user experience across devices
 
 ---
 
@@ -59,6 +57,7 @@ EduReach solves this problem using an intelligent RAG-based AI chatbot that prov
 - Tailwind CSS
 - Axios
 - React Router DOM
+- Vite
 
 ### Backend
 - Node.js
@@ -89,7 +88,7 @@ EduReach solves this problem using an intelligent RAG-based AI chatbot that prov
 4. Relevant knowledge chunks are retrieved semantically
 5. Gemini API generates contextual responses using retrieved data
 
-This enables intelligent, context-aware conversations instead of simple keyword matching.
+This enables intelligent and context-aware AI conversations.
 
 ---
 
@@ -100,6 +99,7 @@ edureach-platform/
 │
 ├── client/         # React Frontend
 ├── server/         # Node.js Backend
+├── screenshots/    # Project Screenshots
 ├── README.md
 └── .gitignore
 ```
@@ -134,9 +134,18 @@ Create a `.env` file inside the `server/` directory:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_uri
+
+MONGODB_URI=your_mongodb_uri
+
 JWT_SECRET=your_jwt_secret
-GEMINI_API_KEY=your_gemini_api_key
+
+GOOGLE_API_KEY=your_google_api_key
+
+VAPI_API_KEY=your_vapi_api_key
+VAPI_ASSISTANT_ID=your_assistant_id
+VAPI_PHONE_NUMBER_ID=your_phone_number_id
+
+CLIENT_URL=http://localhost:5173
 ```
 
 ---
@@ -161,12 +170,20 @@ npm run dev
 
 ## 📸 Screenshots
 
-_Add project screenshots here_
+### 🏠 Homepage
+![Homepage](./screenshots/homepage.png)
 
-- Homepage
-- AI Chatbot
-- Callback Request Form
-- Placement Highlights
+### 🤖 SignUp Page
+![SignUp Page](./screenshots/signup-page.png)
+
+### 🤖 AI Chatbot
+![AI Chatbot](./screenshots/chatbot.png)
+
+### 📞 Callback Request Form
+![Callback Form](./screenshots/callback-form.png)
+
+### 🎯 Placement Highlights
+![Placements](./screenshots/placements.png)
 
 ---
 
@@ -177,7 +194,7 @@ _Add project screenshots here_
 - Handling frontend-backend integration
 - Authentication and protected route handling
 - Improving AI response accuracy and context retrieval
-- Debugging API integration and asynchronous workflows
+- Debugging API integration and deployment workflows
 
 ---
 
@@ -189,22 +206,3 @@ _Add project screenshots here_
 - AI-powered career recommendations
 - Admin dashboard for colleges
 - Advanced analytics and insights
-
----
-
-## 🎯 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-- Full-stack application development
-- AI integration in real-world systems
-- Vector databases and semantic search
-- Authentication and API architecture
-- Debugging production-level issues
-- Building scalable AI-assisted platforms
-
----
-
-## ⭐ Conclusion
-
-EduReach demonstrates how AI and RAG systems can modernize traditional educational platforms by providing intelligent, real-time, and contextual student assistance for students exploring colleges and career opportunities.
